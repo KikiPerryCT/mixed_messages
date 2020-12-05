@@ -40,11 +40,19 @@ const quotes = {
             quoteArr = this.friendship;
             console.log("We have selected friendship and the message is...");
         }
-
         //console.log(quoteArr);
         return (quoteArr[Math.floor(Math.random() * quoteArr.length)]);
     }
 };
 
 console.log("Welcome to Kiki's Message Generation Program!\n");
+
+/* If you want to add a quote to either life, love or friendship,
+uncomment the following two lines and replace quotes.life with the 
+desired topic (quotes.life , quotes.love , quotes.friendship) and 
+the quote within the quotation marks. 
+
+quotes.life = 'This is a quote i am adding to life';
+*/
+
 console.log('"'+quotes.randomQuote()+'"');
